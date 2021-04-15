@@ -8,7 +8,7 @@ export const DELETE_CATEGORY = "DELETE_CATEGORY";
 export const getCategories = () => {
   return (dispatch) => {
     return axios
-      .get("https://affectionate-benz-1c28a4.netlify.app/categories?_sort=libelle&_order=asc")
+      .get("http://localhost:3000/categories?_sort=libelle&_order=asc")
       .then((res) => {
         dispatch({ type: GET_CATEGORIES, payload: res.data });
       })
@@ -19,7 +19,7 @@ export const getCategories = () => {
 export const addCategory = (data) => {
   return (dispatch) => {
     return axios
-      .post("https://affectionate-benz-1c28a4.netlify.app/categories", data)
+      .post("http://localhost:3000/categories", data)
       .then(() => {
         dispatch({ type: ADD_CATEGORY, payload: data });
       })
@@ -31,7 +31,7 @@ export const editCategory = (data) => {
   return (dispatch) => {
     return axios({
       method: "put",
-      url: `https://affectionate-benz-1c28a4.netlify.app/categories/${data.id}`,
+      url: `http://localhost:3000/categories/${data.id}`,
       data: { ...data },
     })
       .then(() => {
@@ -44,7 +44,7 @@ export const editCategory = (data) => {
 export const deleteCategory = (dataId) => {
   return (dispatch) => {
     return axios
-      .delete(`https://affectionate-benz-1c28a4.netlify.app/categories/${dataId}`)
+      .delete(`http://localhost:3000/categories/${dataId}`)
       .then(() => {
         dispatch({ type: DELETE_CATEGORY, payload: { dataId } });
       })

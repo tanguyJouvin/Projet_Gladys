@@ -44,7 +44,7 @@ export const editFile = (data) => {
 export const deleteFile = (dataId) => {
   return (dispatch) => {
     return axios
-      .delete(`https://affectionate-benz-1c28a4.netlify.app/files/${dataId}`)
+      .delete(`http://localhost:3000/files/${dataId}`)
       .then(() => {
         dispatch({ type: DELETE_FILE, payload: { dataId } });
       })
