@@ -1,0 +1,12 @@
+** INSTALLER REDUX **
+npm i -s react-redux redux redux-thunk redux-devtools-extension
+
+** JSON-SERVER **
+npm i -g json-server
+json-server --w db.json
+
+** CHOIX DES TECHNOLOGIES **
+
+JSON-SERVER : permet d'avoir un serveur EXPRESS qui sert une API  pour avoir une jeu de fausses donnnées
+SCSS : pour le style
+REDUX : pour avoir un gestionnaire d'état simulant un back-end

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@300&family=Rubik&display=swap");
+$color-1: #fff;
+$color-2: #292929;
+$color-3: #02a3b6;
+$color-4: rgb(168, 168, 168);
+$color-N: #282c34;
+$font-family-rubik: "Rubik", sans-serif;
+$font-family-antonio: "Antonio", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-1;
+  color: $color-2;
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  font-family: $font-family-rubik;
+}
+h1,
+h2 {
+  font-family: $font-family-antonio;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: $font-family-antonio;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: $color-N;
+  cursor: pointer;
+ 
+}
+
+a:visited {
+  color: $color-N;
+}
+
+input[type="submit"] {
+  background: $color-3;
+  width: 100px;
+  color: $color-1;
+  margin-left: auto;
+  letter-spacing: 1px;
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+}
