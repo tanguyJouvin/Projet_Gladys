@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import Category from "./Category";
 import { isEmpty } from "./Utils";
 import { editFile, deleteFile } from "../actions/file.action";
 
@@ -58,10 +57,9 @@ const File = ({ file }) => {
         <p>{file.description}</p>
       )}
 
-      <div className="author">
-        <h5>{file.author}</h5>
+      <div className="footer">
         <h4>{file.category}</h4>
-       {/*  <Category file={file} /> */}
+        <h5>{file.author}</h5>
       </div>
     </div>
   );

@@ -8,7 +8,7 @@ import Navigation from "../components/Navigation";
 
 const Home = () => {
   const files = useSelector((state) => state.fileReducer);
-  
+
   return (
     <div>
       <Navigation />

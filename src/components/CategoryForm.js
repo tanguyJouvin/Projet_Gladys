@@ -1,17 +1,14 @@
 import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {
   getCategories,
   addCategory,
   editCategory,
-  deleteCategory,
 } from "../actions/category.action";
-import Navigation from "../components/Navigation";
 import { isEmpty } from "./Utils";
 
 function CategoryForm({ input }) {
   const dispatch = useDispatch();
-  console.log("modif : " + input.libelle);
   const [editText, setEditText] = useState("");
 
   const handleSubmit = (e) => {
@@ -19,7 +16,6 @@ function CategoryForm({ input }) {
 
     if (!isEmpty(editText)) {
       if (!input.id) {
-        console.log("par là", editText, " - ", input.libelle);
         dispatch(addCategory({ libelle: editText }));
         setEditText("");
         dispatch(getCategories());
@@ -40,7 +36,6 @@ function CategoryForm({ input }) {
           placeholder="Ajouter une nouvelle catégorie"
           onChange={(e) => setEditText(e.target.value)}
         />
-        {input.id}
         <input type="submit" value="Envoyer" />
       </form>
     </div>

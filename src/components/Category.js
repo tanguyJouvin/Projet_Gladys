@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   getCategories,
-  addCategory,
-  editCategory,
   deleteCategory,
 } from "../actions/category.action";
 import Navigation from "../components/Navigation";

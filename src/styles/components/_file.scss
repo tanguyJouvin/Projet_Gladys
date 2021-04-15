@@ -38,24 +38,27 @@
       display: block;
     }
   }
-  .author {
+  .footer {
     position: absolute;
     right: 28px;
     bottom: 10px;
     display: flex;
 
+    h4 {
+      height: 25px;
+      width: 25px;
+      color: #02a3b6;
+    }
+
     h5 {
       margin-right: 10px;
+      margin-top: 25px;
       transform: translateY(3px);
     }
     div {
       display: flex;
     }
 
-    .clap {
-      height: 25px;
-      width: 25px;
-      object-fit: cover;
-    }
+ 
   }
 }

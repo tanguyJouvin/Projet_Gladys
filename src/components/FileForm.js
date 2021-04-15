@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addFile, getFiles } from "../actions/file.action";
-import { getCategories } from "../actions/category.action";
 import { isEmpty } from "../components/Utils";
 
 const FileForm = () => {
@@ -43,14 +42,10 @@ const FileForm = () => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         ></textarea>
-        <select>
+        <select onChange={(e) => setCategory(e.target.value)}>
           {!isEmpty(categories) &&
             categories.map((cat) => (
-              <option
-                key={cat.id}
-                value={cat.libelle}
-                onChange={(e) => setCategory(cat.libelle)}
-              >
+              <option key={cat.id} value={cat.libelle}>
                 {cat.libelle}
               </option>
             ))}

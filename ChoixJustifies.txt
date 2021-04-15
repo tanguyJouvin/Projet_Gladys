@@ -1,12 +1,20 @@
-** INSTALLER REDUX **
-npm i -s react-redux redux redux-thunk redux-devtools-extension
+** INSTALLER L'APPLICATION **
+npm i
 
-** JSON-SERVER **
+** JSON-SERVER - SERVEUR DE BASE DE DONNEES LOCALES**
 npm i -g json-server
 json-server --w db.json
+
+** INSTALLER REDUX **
+npm i -s react-redux redux redux-thunk redux-devtools-extension
 
 ** CHOIX DES TECHNOLOGIES **
 
 JSON-SERVER : permet d'avoir un serveur EXPRESS qui sert une API  pour avoir une jeu de fausses donnnées
 SCSS : pour le style
 REDUX : pour avoir un gestionnaire d'état simulant un back-end
+AXIOS : bibliothèque permettant de manipuler des requêtes
+
+mise en place d'un routeur pour naviguer en tre les pages.
+
+nom de domaine: https://affectionate-benz-1c28a4.netlify.app/
