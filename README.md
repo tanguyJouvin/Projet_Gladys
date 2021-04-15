@@ -71,7 +71,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## CHOIX DES TECHNOLOGIES 
 
-1-JSON-SERVER : permet d'avoir un serveur EXPRESS qui sert une API pour avoir une bdd
-2-SCSS : pour le style, préprocesseur CSS 
-3-REDUX : pour avoir un gestionnaire d'état afin d'ajouter des traitements
-4-AXIOS : bibliothèque permettant de faire des requêtes HTTP et d'utiliser des promesses
+1. JSON-SERVER : permet d'avoir un serveur EXPRESS qui sert une API pour avoir une bdd
+2. SCSS : pour le style, préprocesseur CSS 
+3. REDUX : pour avoir un gestionnaire d'état afin d'ajouter des traitements
+4. AXIOS : bibliothèque permettant de faire des requêtes HTTP et d'utiliser des promesses
+5. ROUTER : bibliothèque permettant de mettre en place un routing de page
